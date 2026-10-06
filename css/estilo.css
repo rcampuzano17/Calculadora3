@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.6), rgba(255, 255, 0, 0.6), rgba(255, 0, 0, 0.6)); /* Degradado lineal con colores más suaves */
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="datetime-local"] {
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el selector de fecha y hora */
+}
+
+select {
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el menú desplegable */
+}
+
+select:focus {
+    cursor: pointer; /* Asegura que el cursor siga siendo una mano cuando el menú está enfocado */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1px; /* Espacio entre la imagen y el título */
+}

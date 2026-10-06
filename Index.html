@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Horas Hábiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Imagen añadida -->
+        <img src="css/images.jpeg" alt="Descripción de la imagen" class="header-image">
+        <h1>Calculadora Citas</h1>
+        <form id="calculatorForm">
+            <label for="startDateTime">Fecha y Hora Inicial:</label>
+            <input type="datetime-local" id="startDateTime" required>
+            <label for="timeToSubtract">Tiempo a Restar:</label>
+            <select id="timeToSubtract" required>
+                <option value="90">Tipo VIP</option>
+                <option value="150">Tipo A</option>
+                <option value="240">Tipo B</option>
+                <option value="420">Tipo C</option>
+                <option value="1320">Tipo D</option>
+                <option value="3000">Tipo E</option>
+            </select>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result">
+            <h2>Fecha y Hora Final Ajustada:</h2>
+            <p id="finalDateTime"></p>
+        </div>
+    </div>
+    <script src="js/calcula.js"></script>
+</body>
+</html>
